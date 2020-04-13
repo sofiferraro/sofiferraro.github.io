@@ -2,7 +2,6 @@
 body{width: 100%;}
 
 .video {background-color: #0e0e0e;
-		background-image: url(imagenes/ruidonegro.gif);
         width: 100%;
 		height: 100vh;}
 		
@@ -114,7 +113,17 @@ a:link, a:visited, a:active {
 	transform: translateY(0px);
 
 } 
+/*.reel2020{height: 100%;
+			width: 100%;
+			margin-top: 50%;
+					
+			}*/
+			.centrado{ padding-top:50%;
+				
+				}	
 
+.centrado2{width: 100%;}
+.ancho{width: 100%;}			
 .dropdown-menu{background-color: transparent;
 				border:0;
 				padding: 0;
@@ -150,6 +159,10 @@ svg{width:10em;
 }
 
 @media (min-width: 700px) and (orientation: landscape){
+													.video {background-color: #0e0e0e;
+														background-image: url(imagenes/ruidonegro.gif);
+														width: 100%;
+														height: 100vh;}
 														.dropdown-item.active, .dropdown-item:active{background: transparent;}
 														.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
 														.htrescelu{font-size: 5rem;}
@@ -179,17 +192,13 @@ svg{width:10em;
 																justify-content: center;
 																align-items: center;
 																width: 90%}*/	
-												       .reel-centro{display: flex;
-																justify-content: center;
-																align-items: center;
-                                                                width: 70%; 
-                                                                margin-top:7% ;
-                                                }
+												
     .centrado{ display: flex;
                 justify-content: center;
                 align-items: center;
 				background-position: center;
 				height: 100vh;
+				padding-top: 0;
 				}
 	.centrado2{display: flex;
 					justify-content: center;
