@@ -158,6 +158,15 @@ svg{width:10em;
 	}
 }
 
+.play{position: absolute;
+	z-index: 111;
+	display: none;
+	}
+.play-img{width: 3em;}
+
+.play a:focus{display: none;}
+
+
 @media (min-width: 700px) and (orientation: landscape){
 													.video {background-color: #0e0e0e;
 														background-image: url(imagenes/ruidonegro.gif);
@@ -212,7 +221,14 @@ svg{width:10em;
 		display: flex;
 		justify-content: flex-end;
 		font-size: .8em;}	
-
-
+	
+		.play{position: absolute;
+			z-index: 111;
+			display: block;
+			}
+		.play-img{width: 3em;}
+		
+		.play a:focus{display: none;}
+		
 
 }
