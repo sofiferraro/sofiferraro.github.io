@@ -118,12 +118,13 @@ a:link, a:visited, a:active {
 			margin-top: 50%;
 					
 			}*/
+			/*
 			.centrado{ padding-top:50%;
 				
 				}	
 
 .centrado2{width: 100%;}
-.ancho{width: 100%;}			
+		*/
 .dropdown-menu{background-color: transparent;
 				border:0;
 				padding: 0;
@@ -165,7 +166,8 @@ svg{width:10em;
 .play-img{width: 3em;}
 
 .play a:focus{display: none;}
-
+.tamaño-textor-reel{font-size: .8em;
+					padding-left: 1.4em;}
 
 @media (min-width: 700px) and (orientation: landscape){
 													.video {background-color: #0e0e0e;
@@ -181,8 +183,8 @@ svg{width:10em;
 														.parallax-completo{
 																			width: 100%;
 																			height: 100vh;
-																			background-image: url(imagenes/ruidonegro.gif);
-																			/*background-image: url(imagenes/ruido.gif);*/
+																			/*background-image: url(imagenes/ruidonegro.gif);*/
+																			background-image: url(imagenes/ruidoportada.gif);
 																			background-position: center;
 																			-webkit-background-size: cover;
 																			background-size: cover;
@@ -201,7 +203,7 @@ svg{width:10em;
 																justify-content: center;
 																align-items: center;
 																width: 90%}*/	
-												
+	/*											
     .centrado{ display: flex;
                 justify-content: center;
                 align-items: center;
@@ -213,7 +215,7 @@ svg{width:10em;
 					justify-content: center;
 					align-items: center;
 					 
-					margin-top: 1em;}	
+					margin-top: 1em;}	*/
 	.img-web:hover{filter:brightness(70%);
 					cursor: pointer;}	
 	.img-web{filter:brightness(90%);}			
@@ -229,6 +231,6 @@ svg{width:10em;
 		.play-img{width: 3em;}
 		
 		.play a:focus{display: none;}
-		
-
+		.tamaño-textor-reel{font-size: 1.5em;
+			padding-left: 0em;}
 }
