@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+body{width: 100%;}
+
+.video {background-color: #0e0e0e;
+		background-image: url(imagenes/ruidonegro.gif);
+        width: 100%;
+        height: 100vh;}
+
+a:hover{filter: brightness(70%);} 
+a:link, a:visited, a:active {
+	
+    text-decoration:none;
+}	
+
+.portada {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+.parallax-completo{
+					width: 100%;
+					height: 100vh;
+					background-image: url(imagenes/fondo1.png);
+					background-position: center;
+					-webkit-background-size: cover;
+					background-size: cover;
+					background-repeat: no-repeat;	
+					}
+.contacto{
+			width: 100%;
+			height: 100vh;
+			background: #0e0e0e;
+			background-image: url(imagenes/ruidonegrocelu.gif);
+			background-position: center;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-repeat: no-repeat;	
+						}
+.text-center{text-align: center}
+.hover:hover{filter: brightness(70%);}
+.hover-inv:hover{filter: brightness(30%);}
+.shadow{text-shadow:   2px 8px 8px #000000;}
+.subtitulo{display: flex;
+			flex-direction: row;
+			justify-content: space-between;}
+
+.texto-blanco{ color: white;
+				font-family: 'Montserrat', sans-serif; }
+.texto-gris{color: #a5a5a5;}
+.montserrat{font-family: 'Montserrat', sans-serif;}	
+
+.bold{font-weight: 700}
+.thin{font-weight: 200;}				  
+.htrescelu{font-size: 2rem;}
+.hseiscelu{font-size: 1rem;
+			font-weight: 200;}
+
+.hsietecelu{font-size: .8em;}
+.copyright{position: absolute;
+			top:95%}
+.column{display: flex;
+		flex-direction: column;}
+.logo5{width: 1.2em;
+		z-index: 100;}
+.page-footer{background-color: #232323;}					
+.copy{background-color: #191919;}
+.fondo-blanco{background-color: #fff;}
+.margin-0{margin:0;
+					padding: 0;
+					padding-right: 0;
+					padding-left: 0;}
+
+.videomenu{position: relative;}
+
+.videomenu ul{position: absolute;
+			background: transparent;
+			padding: 0;
+			margin-top: 10px;
+				width: 140px;
+				height: 100px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex-direction: column;
+				list-style: none;
+				filter: opacity(0%);
+				
+				transform: translateY(-10px);
+				transition: all 0.4s ease;
+				}
+
+.videomenu a{color: rgba(240, 240, 240, 0.85);
+			 text-decoration: none}
+
+.videomenu li{
+			  width: 100%;
+			  height: 100%;
+			  display: flex;
+			  justify-content: flex-start;
+			  align-items: center;
+			}
+.videomenu li:hover{background-color: transparent; }						 
+
+.dropdowndos a h6:hover{ filter: brightness(70%);}			 	
+
+.videomenu a:focus + ul{
+	filter: opacity(100%);
+	
+	transform: translateY(0px);
+
+} 
+
+.dropdown-menu{background-color: transparent;
+				border:0;
+				padding: 0;
+                margin: 0;}
+
+.dropdown-item{padding: .5em;
+				margin: 0;
+				color:#a5a5a5;
+				}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83)}
+.instagram{display: none}
+
+#mypath{
+	stroke-opacity: .2;
+	stroke-dashoffset: 1000;
+	stroke-dasharray: 50;
+	animation-name: padda;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+}
+svg{width:10em;
+	height: 3em;
+	}
+@keyframes padda {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@media (min-width: 700px) and (orientation: landscape){
+														.dropdown-item.active, .dropdown-item:active{background: transparent;}
+														.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
+														.htrescelu{font-size: 5rem;}
+														.hseiscelu{font-size: 2.4rem;
+															font-weight: 200;}
+														.instagram{display: block}
+														.parallax-completo{
+																			width: 100%;
+																			height: 100vh;
+																			background-image: url(imagenes/ruido.gif);
+																			background-position: center;
+																			-webkit-background-size: cover;
+																			background-size: cover;
+																			background-repeat: no-repeat;
+																			/*background-attachment: fixed;*/
+					
+																			}
+														.contacto{
+															
+															background-image: url(imagenes/ruidonegro.gif);
+																
+																		}					
+														.htrescelu{font-size: 2rem;}
+														.hseiscelu{font-size: 1rem;}
+														/*.reel{display: flex;
+																justify-content: center;
+																align-items: center;
+																width: 90%}*/	
+												       .reel-centro{display: flex;
+																justify-content: center;
+																align-items: center;
+                                                                width: 70%; 
+                                                                margin-top:7% ;
+                                                }
+    .centrado{ display: flex;
+                justify-content: center;
+                align-items: center;
+				background-position: center;
+				height: 100vh;
+				}
+	.centrado2{display: flex;
+					justify-content: center;
+					align-items: center;
+					 
+					margin-top: 1em;}	
+	.img-web:hover{filter:brightness(70%);
+					cursor: pointer;}	
+	.img-web{filter:brightness(90%);}			
+	.end{margin-top: 1em;
+		display: flex;
+		justify-content: flex-end;
+		font-size: .8em;}	
+
+
+
+}
