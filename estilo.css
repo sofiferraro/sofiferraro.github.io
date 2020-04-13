@@ -128,9 +128,7 @@ a:link, a:visited, a:active {
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83)}
 .instagram{display: none}
 
-.navbar-inverse .navbar-nav .nav-link {background-color: #0000009f;
-									
-										width: 100%;}
+.navbar-inverse .navbar-nav .nav-link {background-color:transparent}
 
 #mypath{
 	stroke-opacity: .2;
