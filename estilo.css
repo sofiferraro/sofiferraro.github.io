@@ -152,6 +152,7 @@ svg{width:10em;
 														.parallax-completo{
 																			width: 100%;
 																			height: 100vh;
+																			background-image: url(imagenes/ruidonegro.gif);
 																			background-image: url(imagenes/ruido.gif);
 																			background-position: center;
 																			-webkit-background-size: cover;
