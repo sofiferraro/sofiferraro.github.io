@@ -54,7 +54,8 @@ a:link, a:visited, a:active {
 .outer-wrapper{display: none}
 
 .uno{background: #E9E9E9;
-    padding-bottom: 3em
+	padding-bottom: 3em;
+	padding-top: 1.5em;
 	 
 	}
 
