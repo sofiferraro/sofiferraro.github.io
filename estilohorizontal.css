@@ -53,21 +53,21 @@ a:link, a:visited, a:active {
 .navbar-inverse .navbar-nav .nav-link {color: #919191}
 .outer-wrapper{display: none}
 
-.uno{background: #E9E9E9;
+.uno{
 	padding-bottom: 3em;
 	padding-top: 1.5em;
 	 
 	}
 
-.dos{background: #101010;
+.dos{
     padding-bottom: 3em
      }
 
-.tres{background: #E9E9E9;
+.tres{
     padding-bottom: 3em;
     }
     
-.cuatro{background: #101010;
+.cuatro{
 	}
 .container-fluid{padding: 0}
 .col, .col-12,  .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12,  .col-sm, .col-sm-12{
@@ -106,26 +106,28 @@ a:link, a:visited, a:active {
 																height: 100vh;
 																transform:rotate(90deg) translateY(-100vh);
 																transform-origin: top left;
+																background-image: url(imagenes/ruidonegroancho.gif);
+																background-repeat: repeat;
 															}
 
-															.uno{background: #E9E9E9;
-																/*background-image: url(imagenes/ruidonegro.gif);*/
+															.uno{
+																
 																display: flex;
 																justify-content: center;
 																align-items: center;}
 
-															.dos{background: #101010;
+															.dos{
                                                                  display: flex;
 																justify-content: center;
 																align-items: center;
                                                                 padding-right: 1em;    }
 
-															.tres{background: #E9E9E9;
+															.tres{
                                                                 display: flex;
 																justify-content: center;
 																align-items: center;}
     
-															.cuatro{background: #101010;
+															.cuatro{
 																display: flex;
 																justify-content: center;
 																align-items: center;
