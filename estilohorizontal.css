@@ -66,9 +66,9 @@ a:link, a:visited, a:active {
 .tres{
     padding-bottom: 3em;
     }
-    
+ /*   
 .cuatro{
-	}
+	}*/
 .container-fluid{padding: 0}
 .col, .col-12,  .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12,  .col-sm, .col-sm-12{
 	padding-left: 3em;
