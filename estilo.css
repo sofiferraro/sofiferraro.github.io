@@ -216,21 +216,34 @@ svg{width:10em;
 					align-items: center;
 					 
 					margin-top: 1em;}	*/
-	.img-web:hover{filter:brightness(70%);
-					cursor: pointer;}	
-	.img-web{filter:brightness(90%);}			
-	.end{margin-top: 1em;
-		display: flex;
-		justify-content: flex-end;
-		font-size: .8em;}	
-	
-		.play{position: absolute;
-			z-index: 111;
-			display: block;
-			}
-		.play-img{width: 3em;}
 		
-		.play a:focus{display: none;}
+
+	
+		.play{
+			display: block;
+			position: absolute;
+			z-index: 111;
+			top:10%;
+			left: 5%;
+			}
+		.play-img{position: absolute;
+			z-index: 111;
+			
+			width: 4em;
+		 }
+		
+			.container-fluid {
+				padding-right: 0;
+				padding-left: 0;
+			}
+		
 		.tamaño-textor-reel{font-size: 1.5em;
-			padding-left: 0em;}
+						padding-left: 0em;}			
+
+
+/*WEB*/
+			.end{margin-top: 1em;
+				display: flex;
+				justify-content: flex-end;
+				font-size: .8em;}	
 }
