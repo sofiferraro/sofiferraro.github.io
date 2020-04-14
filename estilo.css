@@ -9,8 +9,9 @@ body{width: 100%;}
 	
 	width: 100%;
 	height: 100vh;}		
-
-a:hover{filter: brightness(70%);} 
+a{transition: filter .7s;}
+a:hover{filter: brightness(70%);
+		} 
 a:link, a:visited, a:active {
 	
     text-decoration:none;
@@ -112,7 +113,7 @@ a:link, a:visited, a:active {
 			  align-items: center;
 			}
 .videomenu li:hover{background-color: transparent; }						 
-
+.dropdowndos a h6{transition: filter .7s;}
 .dropdowndos a h6:hover{ filter: brightness(70%);}			 	
 
 .videomenu a:focus + ul{
@@ -192,7 +193,7 @@ svg{width:10em;
 																			width: 100%;
 																			height: 100vh;
 																			/*background-image: url(imagenes/ruidonegro.gif);*/
-																			background-image: url(imagenes/fondorojo.gif);
+																			background-image: url(imagenes/imagenesliv/fondorojo2.gif);
 																			background-position: center;
 																			-webkit-background-size: cover;
 																			background-size: cover;
@@ -200,6 +201,8 @@ svg{width:10em;
 																			/*background-attachment: fixed;*/
 					
 																			}
+														.firmalivia{width: 6em;}
+
 														.tamaño-texto-liv{font-size: 1.2em;}
 														.tamaño-texto-liv:hover{opacity: .5;
 																				cursor: pointer;}					
