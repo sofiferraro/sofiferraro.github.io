@@ -178,7 +178,12 @@ svg{width:10em;
 .tamaño-textor-reel{font-size: .8em;
 					padding-left: 1.4em;}
 
+
+.computadora{display: none;}					
+.celular{display: block;}
 @media (min-width: 700px) and (orientation: landscape){
+														.computadora{display: block;}
+														.celular{display: none;}
 													.video {background-color: #0e0e0e;
 														background-image: url(imagenes/ruidonegro.gif);
 														width: 100%;
