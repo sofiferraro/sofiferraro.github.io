@@ -5,6 +5,7 @@
 }
 
 .video{background-color: #191919;
+		background-image: url(imagenes/ruidonegro.gif);
 		}
 
 a:hover{filter: brightness(70%);} 
@@ -13,7 +14,7 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }	
 
-
+body{}
 
 .subtitulo{display: flex;
 			flex-direction: row;
@@ -54,30 +55,39 @@ a:link, a:visited, a:active {
 .outer-wrapper{display: none}
 
 .uno{
-	padding-bottom: 3em;
-	padding-top: 1.5em;
+	padding-bottom: 0em;
+	padding-top: 3em;
 	 
 	}
 
 .dos{
-    padding-bottom: 3em
+    padding-bottom: 0em
      }
 
 .tres{
-    padding-bottom: 3em;
+    padding-bottom: 2em;
     }
  /*   
 .cuatro{
 	}*/
 .container-fluid{padding: 0}
 .col, .col-12,  .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12,  .col-sm, .col-sm-12{
-	padding-left: 3em;
-    padding-right: 3em;
-    padding-top:3em;
+	padding-left: 1em;
+    padding-right: 1em;
+    padding-top:1em;
     margin-top:0em 
 }
 .instagram{display: none;}
 .series{display: none;}
+
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+
+	background-repeat: repeat;
+}
+
 
 @media (min-width: 1020px) and (orientation: landscape){
 														.dropdown-item.active, .dropdown-item:active{background: transparent;}
