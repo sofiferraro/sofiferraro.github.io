@@ -102,7 +102,7 @@ a:link, a:visited, a:active {
 															.wrapper{
 																display: flex;
 																flex-direction: row;
-																width: 1083%;
+																width: 1086%;
 																height: 100vh;
 																transform:rotate(90deg) translateY(-100vh);
 																transform-origin: top left;
@@ -120,7 +120,8 @@ a:link, a:visited, a:active {
                                                                  display: flex;
 																justify-content: center;
 																align-items: center;
-                                                                padding-right: 1em;    }
+																padding-right: 1em;  
+																padding-left: .4em;  }
 
 															.tres{
                                                                 display: flex;
