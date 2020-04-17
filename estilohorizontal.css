@@ -89,7 +89,7 @@ body{}
 }
 
 
-@media (min-width: 1020px) and (orientation: landscape){
+@media (min-width: 1600px) and (orientation: landscape){
 														.dropdown-item.active, .dropdown-item:active{background: transparent;}
 														.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
 														.htrescelu{font-size: 2rem;}
