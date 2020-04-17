@@ -196,25 +196,10 @@ a:link, a:visited, a:active {
 	.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
 	.htrescelu{font-size: 2rem;}
 	.hseiscelu{font-size: 1rem;}
-	/*.reel{display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 90%}	
-			.reel-centro{display: flex;
-			justify-content: center;
-			align-items: center;}	*/
-			
-		/*
-		.slide{
-			width: 100vw;
-			height:  100vh;
-		}
-		*/
-
 		.wrapper{
 			display: flex;
 			flex-direction: row;
-			width: 1091%;
+			width: 1092%;
 			height: 100vh;
 			transform:rotate(90deg) translateY(-100vh);
 			transform-origin: top left;
@@ -271,11 +256,6 @@ a:link, a:visited, a:active {
 				padding-left: 2em}
 		.fotosc{height: 51vh;
 				padding-left: 2em;}
-		/*.degradado-lateral{
-		position: absolute;
-		z-index: 1;
-		background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1))}		
-		*/
 	
 
 	.fixed-bottom{width: 3.5em;
@@ -283,9 +263,250 @@ a:link, a:visited, a:active {
 			position: fixed;
 		left: 125em;
 		}   
-		.transparente{opacity: 0;}	
+		.transparente{opacity: 0;}							
+		.series{display: block;
+				top: 90vh}
+		.celu{display: none}
+		.instagram{display: block;}	
+}    
+
+
+
+@media (min-width: 1200px) and (max-height: 500px) and (orientation: landscape){
+	.dropdown-item.active, .dropdown-item:active{background: transparent;}
+	.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
+	.htrescelu{font-size: 2rem;}
+	.hseiscelu{font-size: 1rem;}
+		.wrapper{
+			display: flex;
+			flex-direction: row;
+			width: 1100%;
+			height: 100vh;
+			transform:rotate(90deg) translateY(-100vh);
+			transform-origin: top left;
+			background-image: url(imagenes/ruidonegroancho.gif);
+			background-repeat: repeat;
+		}
+
+		.uno{
 			
-				
+			display: flex;
+			justify-content: center;
+			align-items: center;}
+
+		.dos{
+			 display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-right: 1em;  
+			padding-left: .4em;  }
+
+		.tres{
+			display: flex;
+			justify-content: center;
+			align-items: center;}
+
+		.cuatro{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vh;}
+
+		.outer-wrapper {
+			display:block;
+			width: 100vh;
+			height: 100vw;
+			transform: rotate(-90deg) translateX(-100vh);
+			transform-origin: top left;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			position:absolute;
+			scrollbar-width:none;
+			-ms-overflow-style: none;
+		}
+		::-webkit-scrollbar{
+			display:none;
+		}
+		footer{background: transparent;
+				text-align: center;}
+
+		
+		.fotos{width: 80vh;
+				padding-left: 2em}
+		.fotosv{height: 52vh;
+				padding-left: 2em}
+		.fotosc{height: 51vh;
+				padding-left: 2em;}
+	
+
+	.fixed-bottom{width: 3.5em;
+		  padding-bottom: 4em;
+			position: fixed;
+		left: 125em;
+		}   
+		.transparente{opacity: 0;}							
+		.series{display: block;
+				top: 90vh}
+		.celu{display: none}
+		.instagram{display: block;}	
+}    
+
+
+
+@media (min-width: 1200px)  and (min-height: 2px) and (max-height: 350px) and (orientation: landscape){
+	.dropdown-item.active, .dropdown-item:active{background: transparent;}
+	.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
+	.htrescelu{font-size: 2rem;}
+	.hseiscelu{font-size: 1rem;}
+		.wrapper{
+			display: flex;
+			flex-direction: row;
+			width: 1158%;
+			height: 100vh;
+			transform:rotate(90deg) translateY(-100vh);
+			transform-origin: top left;
+			background-image: url(imagenes/ruidonegroancho.gif);
+			background-repeat: repeat;
+		}
+
+		.uno{
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;}
+
+		.dos{
+			 display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-right: 1em;  
+			padding-left: .4em;  }
+
+		.tres{
+			display: flex;
+			justify-content: center;
+			align-items: center;}
+
+		.cuatro{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vh;}
+
+		.outer-wrapper {
+			display:block;
+			width: 100vh;
+			height: 100vw;
+			transform: rotate(-90deg) translateX(-100vh);
+			transform-origin: top left;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			position:absolute;
+			scrollbar-width:none;
+			-ms-overflow-style: none;
+		}
+		::-webkit-scrollbar{
+			display:none;
+		}
+		footer{background: transparent;
+				text-align: center;}
+
+		
+		.fotos{width: 80vh;
+				padding-left: 2em}
+		.fotosv{height: 52vh;
+				padding-left: 2em}
+		.fotosc{height: 51vh;
+				padding-left: 2em;}
+	
+
+	.fixed-bottom{width: 3.5em;
+		  padding-bottom: 4em;
+			position: fixed;
+		left: 125em;
+		}   
+		.transparente{opacity: 0;}							
+		.series{display: block;
+				top: 90vh}
+		.celu{display: none}
+		.instagram{display: block;}	
+}    
+
+@media (min-width: 1200px)  and (min-height: 2px) and (max-height: 350px) and (orientation: landscape){
+	.dropdown-item.active, .dropdown-item:active{background: transparent;}
+	.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
+	.htrescelu{font-size: 2rem;}
+	.hseiscelu{font-size: 1rem;}
+		.wrapper{
+			display: flex;
+			flex-direction: row;
+			width: 1158%;
+			height: 100vh;
+			transform:rotate(90deg) translateY(-100vh);
+			transform-origin: top left;
+			background-image: url(imagenes/ruidonegroancho.gif);
+			background-repeat: repeat;
+		}
+
+		.uno{
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;}
+
+		.dos{
+			 display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-right: 1em;  
+			padding-left: .4em;  }
+
+		.tres{
+			display: flex;
+			justify-content: center;
+			align-items: center;}
+
+		.cuatro{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vh;}
+
+		.outer-wrapper {
+			display:block;
+			width: 100vh;
+			height: 100vw;
+			transform: rotate(-90deg) translateX(-100vh);
+			transform-origin: top left;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			position:absolute;
+			scrollbar-width:none;
+			-ms-overflow-style: none;
+		}
+		::-webkit-scrollbar{
+			display:none;
+		}
+		footer{background: transparent;
+				text-align: center;
+				display: none;}
+
+		
+		.fotos{width: 80vh;
+				padding-left: 2em}
+		.fotosv{height: 52vh;
+				padding-left: 2em}
+		.fotosc{height: 51vh;
+				padding-left: 2em;}
+	.display-none{display: none;}
+
+	.fixed-bottom{width: 3.5em;
+		  padding-bottom: 4em;
+			position: fixed;
+		left: 125em;
+		
+		}   
+		.transparente{opacity: 0;}							
 		.series{display: block;
 				top: 90vh}
 		.celu{display: none}
