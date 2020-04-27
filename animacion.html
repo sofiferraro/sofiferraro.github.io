@@ -60,29 +60,37 @@
       </div> 
   </div>
   <div  class=" embed-responsive embed-responsive-16by9 video-medida centrado2 margin-0">
-    <video autoplay loop muted playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0"  media="only screen and (width > 700px)" src="imagenes/infinit.mp4"></video>          
+    <video autoplay loop muted playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0"   src="imagenes/infinit.mp4"></video>          
   </div>
   <div  class=" embed-responsive embed-responsive-16by9 video-medida centrado2 margin-0">
-    <video autoplay loop muted  playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0"  media="only screen and (width > 700px)" src="imagenes/deep.mp4"></video>          
+    <video autoplay loop muted  playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0"   src="imagenes/deep.mp4"></video>          
   </div>
   
     <div  class=" embed-responsive embed-responsive-16by9 video-medida centrado2 margin-0">
-      <video autoplay loop muted playsinline id="video2" class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0" media="only screen and (width > 700px)"  src="imagenes/araund.mp4"></video>          
+      <video autoplay loop muted playsinline id="video2" class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0 lazy-video"   src="imagenes/araund.mp4"></video>          
         <div class="video-play">
             <a class="play"  href="#video2" onclick="volumen2()" id="boton2"><img  class="play-img" src="iconos/volume.png" alt=""></a>
         </div> 
     </div>
     <div  class=" embed-responsive embed-responsive-16by9 video-medida centrado2 margin-0">
-      <video autoplay loop muted  playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0"   src="imagenes/twist2.mp4"></video>          
+      <video autoplay loop muted  playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0 lazy-video"   src="">
+        <source data-src="imagenes/twist2.mp4" type="video/mp4">
+      </video>          
     </div> 
     <div  class=" embed-responsive embed-responsive-16by9 video-medida centrado2 margin-0">
-      <video autoplay loop muted  playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0"   src="imagenes/repeat.mp4"></video>          
+      <video autoplay loop muted  playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0 lazy-video"   src="">
+        <source data-src="imagenes/repeat.mp4" type="video/mp4">
+      </video>          
     </div> 
     <div  class=" embed-responsive embed-responsive-16by9 video-medida centrado2 margin-0">
-      <video autoplay loop muted playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0"   src="imagenes/liquid.mp4"></video>          
+      <video autoplay loop muted playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0 lazy-video"   src="">
+        <source data-src="imagenes/liquid.mp4" type="video/mp4">
+      </video>          
     </div>
   <div  class=" embed-responsive embed-responsive-16by9 video-medida centrado2 margin-0">
-    <video autoplay loop muted playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0"   src="imagenes/tipito.mp4"></video>          
+    <video autoplay loop muted playsinline class="col-sm-12 col-lg-12  embed-responsive-item ancho margin-0 lazy-video"   src="">
+      <source data-src="imagenes/tipito.mp4"  type="video/mp4">
+    </video>          
   </div>
 </section>
 
@@ -188,7 +196,28 @@ function volumen2(){
     vid.muted =true;
     
   }
-}
+};
+
+
+const lazyvideo = document.querySelectorAll('.lazy-video');
+observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      console.log('video in the view');
+         if (entry.target.querySelector('source').getAttribute('data-src') !== null) {
+          const source = entry.target.querySelector('source').getAttribute('data-src')
+          entry.target.setAttribute('src', source);
+        }
+      observer.unobserve(entry.target);
+    } else {
+      console.log('video out of view');
+    }
+  });
+});
+
+lazyvideo.forEach(video => {
+  observer.observe(video);
+});
 
 </script>
 
