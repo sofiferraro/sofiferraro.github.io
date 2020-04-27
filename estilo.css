@@ -194,6 +194,15 @@ svg{width:10em;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.ojo{width: 100%;
+	height: 110vh;
+	background-image: url(imagenes/ojocelu.gif);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .infinit{width: 100%;
 	height: 110vh;
 	background-image: url(imagenes/infinitcelu.gif);
@@ -212,7 +221,7 @@ svg{width:10em;
 }
 .araund{width: 100%;
 	height: 100vh;
-	background-image: url(imagenes/araundcelu.gif);
+	background-image: url(imagenes/araundcelu2.gif);
 	background-position: center;
 	-webkit-background-size: cover;
 	background-size: cover;
