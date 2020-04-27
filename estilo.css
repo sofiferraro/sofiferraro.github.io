@@ -242,7 +242,12 @@ svg{width:10em;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.navbar{background-color: #0e0e0e;
+	background-image: url(imagenes/ruidonegrocelu.gif);}
+
 @media (min-width: 700px) and (orientation: landscape){
+													.navbar{background-color: transparent;
+															background-image: none;}
 														.computadora{display: block;}
 														.celular{display: none;}
 													.video {background-color: #0e0e0e;

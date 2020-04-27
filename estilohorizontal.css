@@ -92,7 +92,8 @@ a:link, a:visited, a:active {
 		background-image: url(imagenes/ruidonegrocelu.gif);}
 
 @media (min-width: 1200px) and (min-height: 800px) and (orientation: landscape){
-													    .navbar{background-color: transparent;}
+														.navbar{background-color: transparent;
+																background-image: none;}
 														.dropdown-item.active, .dropdown-item:active{background: transparent;}
 														.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
 														.htrescelu{font-size: 2rem;}
