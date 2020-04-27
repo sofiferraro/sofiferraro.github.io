@@ -88,8 +88,7 @@ a:link, a:visited, a:active {
 
 	background-repeat: repeat;
 }
-.navbar{background-color: #0e0e0e;
-		background-image: url(imagenes/ruidonegrocelu.gif);}
+.navbar{background-color: #0e0e0e;}
 
 @media (min-width: 1200px) and (min-height: 800px) and (orientation: landscape){
 														.navbar{background-color: transparent;
