@@ -242,8 +242,7 @@ svg{width:10em;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.navbar{background-color: #0e0e0e;
-	background-image: url(imagenes/ruidonegrocelu.gif);}
+.navbar{background-color: #0e0e0e;}
 .videocelu{height: 100vh;}	
 
 @media (min-width: 700px) and (orientation: landscape){
