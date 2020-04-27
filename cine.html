@@ -87,9 +87,18 @@
  
   var vid = document.getElementById("video");
 
-function volumen() { 
+  function volumen() { 
   document.getElementById("boton").style.display = "block";
-  vid.muted = false;
+
+  if (vid.muted === true){
+    vid.muted = false;
+    
+  }
+  else if (vid.muted === false){
+    vid.muted = true;
+    
+  }
+
 };
 
 </script>
