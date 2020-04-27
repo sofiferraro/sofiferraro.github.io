@@ -244,6 +244,7 @@ svg{width:10em;
 }
 .navbar{background-color: #0e0e0e;
 	background-image: url(imagenes/ruidonegrocelu.gif);}
+.videocelu{height: 100vh;}	
 
 @media (min-width: 700px) and (orientation: landscape){
 													.navbar{background-color: transparent;
