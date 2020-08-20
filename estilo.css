@@ -261,7 +261,7 @@ svg{width:10em;
 			height: 100vh;}			
 
 @media (min-width: 700px) and (orientation: landscape){
-													.video-reel{padding-botton: 0em;
+													.video-reel{padding-bottom: 0em;
 														transform: rotate(0deg);}
 													.navbar{background-color: transparent;
 															background-image: none;}
