@@ -16,7 +16,7 @@
             background: #000;
             overflow: hidden;
         }
-        div {
+        .click {
             position: absolute;
             top: 0;
             left: 0;
@@ -28,19 +28,26 @@
             text-shadow: 0 0 3px #fff;
             cursor: pointer;
         }
+        .azul{ position: absolute;
+                top: 0;
+                z-index: 11;
+                width: 10em;
+                cursor: pointer;}
 
     </style>
 </head>
 <body>
     
     <canvas id="canvas"></canvas>
-    <div id="go">[ CLICK/TAP TO DRAW ]</div>
+    <div class="click" id="go">[ Haga Click para dibujar ]</div>
+    <!--<div class="azul" ><a id="azul">   AZUL</a></div> -->
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
         function $(el) {return document.getElementById(el.replace(/#/,''));};
+        function $(el) {return document.getElementById(el.replace(/#/,''));};
 var canvas = $('#canvas');
-canvas.style.backgroundImage="url(img/fondo.jpeg)";
+canvas.style.backgroundImage="url(img/fondo.png)";
 canvas.style.backgroundSize="cover";
 canvas.width = document.body.clientWidth;
 canvas.height = document.body.clientHeight;
@@ -52,9 +59,9 @@ var start = function(coors) {
 };
 var move = function(coors) {
     if (this.isDrawing) {
-        context.strokeStyle = "#fff";
+        context.strokeStyle = "#ff0000";
         context.lineJoin = "round";
-        context.lineWidth = 3;
+        context.lineWidth = 8;
         context.lineTo(coors.x, coors.y);
         context.stroke();
     }
