@@ -9,13 +9,21 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%;
+            
             color: #fff;
             font-family: monospace;
             font-size: 40px;
             background: #000;
             overflow: hidden;
+          
+
+            
         }
+        .canvas{ height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-content: center;}
         .click {
             position: absolute;
             top: 0;
@@ -28,17 +36,14 @@
             text-shadow: 0 0 3px #fff;
             cursor: pointer;
         }
-        .azul{ position: absolute;
-                top: 0;
-                z-index: 11;
-                width: 10em;
-                cursor: pointer;}
+     
 
     </style>
 </head>
 <body>
-    
+    <div class="canvas">
     <canvas id="canvas"></canvas>
+</div>
     <div class="click" id="go">[ Haga Click para dibujar ]</div>
     <!--<div class="azul" ><a id="azul">   AZUL</a></div> -->
 
@@ -47,8 +52,9 @@
         function $(el) {return document.getElementById(el.replace(/#/,''));};
         function $(el) {return document.getElementById(el.replace(/#/,''));};
 var canvas = $('#canvas');
-canvas.style.backgroundImage="url(img/fondo2.png)";
-canvas.style.backgroundSize="cover";
+canvas.style.backgroundImage="url(img/fondo3.png)";
+canvas.style.backgroundSize="contain";
+canvas.style.backgroundRepeat="no-repeat";
 canvas.width = document.body.clientWidth;
 canvas.height = document.body.clientHeight;
 var context = canvas.getContext('2d');
