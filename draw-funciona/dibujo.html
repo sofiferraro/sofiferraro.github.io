@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pic-Tour</title>
     <style>
 
         html, body {
@@ -11,8 +11,9 @@
             padding: 0;
             
             color: #fff;
-            font-family: monospace;
-            font-size: 40px;
+            font-family: roboto;
+            font-size: 1.2rem;
+            font-weight: 300;
             background: #000;
             overflow: hidden;
           
@@ -20,6 +21,7 @@
             
         }
         .canvas{ height: 100vh;
+            margin-top: 2em;
             width: 100vw;
             display: flex;
             justify-content: center;
@@ -36,7 +38,12 @@
             text-shadow: 0 0 3px #fff;
             cursor: pointer;
         }
-     
+     .boton{ position: absolute;
+        top: 50%;
+        left: 50%;
+         width: 5em;
+         z-index: 8000;
+        background: rgb(255, 255, 255);}
 
     </style>
 </head>
@@ -44,15 +51,22 @@
     <div class="canvas">
     <canvas id="canvas"></canvas>
 </div>
-    <div class="click" id="go">[ Haga Click para dibujar ]</div>
+    <div class="click" id="go">[ Haga Click para dibujar ]<a href=""><div class=boton></div></a></div>
     <!--<div class="azul" ><a id="azul">   AZUL</a></div> -->
+    
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <audio autoplay>
+      
+        <source src="audio/audio.mp3" type="audio/mpeg">
+ 
+      </audio>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
         function $(el) {return document.getElementById(el.replace(/#/,''));};
         function $(el) {return document.getElementById(el.replace(/#/,''));};
 var canvas = $('#canvas');
-canvas.style.backgroundImage="url(img/fondo3.png)";
+canvas.style.backgroundImage="url(img/mano2.png)";
 canvas.style.backgroundSize="contain";
 canvas.style.backgroundRepeat="no-repeat";
 canvas.width = document.body.clientWidth;
