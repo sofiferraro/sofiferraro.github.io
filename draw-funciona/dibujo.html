@@ -39,7 +39,9 @@
             cursor: pointer;
         }
      
-
+        audio{
+            z-index: 999999;
+        }
     </style>
 </head>
 <body>
@@ -47,18 +49,18 @@
     <canvas id="canvas"></canvas>
 </div>
     <div class="click" id="go">[ Haga Click para dibujar ]</div>
-
+<!--
     <audio controls autoplay>
        
         <source src="audio/audio.mp3" type="audio/mpeg">
       
       </audio>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+-->    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
         function $(el) {return document.getElementById(el.replace(/#/,''));};
         function $(el) {return document.getElementById(el.replace(/#/,''));};
 var canvas = $('#canvas');
-canvas.style.backgroundImage="url(img/mano2.png)";
+canvas.style.backgroundImage="url(img/fondo3.png)";
 canvas.style.backgroundSize="contain";
 canvas.style.backgroundRepeat="no-repeat";
 canvas.width = document.body.clientWidth;
