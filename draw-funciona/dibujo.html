@@ -38,12 +38,11 @@
             text-shadow: 0 0 3px #fff;
             cursor: pointer;
         }
-     .boton{ position: absolute;
-        top: 50%;
-        left: 50%;
-         width: 5em;
-         z-index: 8000;
-        background: rgb(255, 255, 255);}
+     a{ position: absolute;
+        top:60%;
+        left: 60%;
+         width: 10em;
+        background: #000;}
 
     </style>
 </head>
@@ -51,17 +50,16 @@
     <div class="canvas">
     <canvas id="canvas"></canvas>
 </div>
-    <div class="click" id="go">[ Haga Click para dibujar ]<a href=""><div class=boton></div></a></div>
+    <div class="click" id="go">[ Haga Click para dibujar ]</div>
     <!--<div class="azul" ><a id="azul">   AZUL</a></div> -->
+    <a href=""></a>
     
-
     <audio autoplay>
       
         <source src="audio/audio.mp3" type="audio/mpeg">
  
       </audio>
-
-      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
         function $(el) {return document.getElementById(el.replace(/#/,''));};
         function $(el) {return document.getElementById(el.replace(/#/,''));};
